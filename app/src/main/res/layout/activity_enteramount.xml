@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Include your toolbar here -->
+        <include
+            layout="@layout/activity_toolbar"
+            android:id="@+id/toolbar"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundboader"
+            android:elevation="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/foundationlogo1" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/biryani_extrabold"
+            android:text="Donation"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:text="Donation Amount"
+            android:textSize="18dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundboader"
+            android:hint="Enter Amount"
+            android:drawableLeft="@drawable/baseline_currency_rupee_blue_24"
+            android:padding="15dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            tools:ignore="TextSizeCheck" />
+        <!-- Your existing code up to onehundred TextView -->
+
+        <!-- Wrap the amounts TextViews in a horizontal LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <!-- First amount TextView -->
+            <TextView
+                android:id="@+id/onehundred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹100"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/roundboader" />
+
+            <!-- Second amount TextView -->
+            <TextView
+                android:id="@+id/twohundred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹200"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundboader" />
+
+            <TextView
+                android:id="@+id/fivehundred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹500"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundboader" />
+
+            <TextView
+                android:id="@+id/onethousand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹1000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/roundboader" />
+
+
+            <!-- Add more TextViews for additional amounts here -->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <!-- First amount TextView -->
+            <TextView
+                android:id="@+id/twothousand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹2000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/roundboader" />
+
+            <!-- Second amount TextView -->
+            <TextView
+                android:id="@+id/twothousandfivehundred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹2500"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundboader" />
+
+            <TextView
+                android:id="@+id/threethousand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹3000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundboader" />
+
+            <TextView
+                android:id="@+id/fivethousand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹5000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/roundboader" />
+
+
+            <!-- Add more TextViews for additional amounts here -->
+        </LinearLayout>
+
+        <!-- Continue with the rest of your layout as-is -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btnbg"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Donate Now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start">
+
+        <!-- Include your navigation drawer content here -->
+        <include
+            layout="@layout/activity_nav_drawer"/>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
